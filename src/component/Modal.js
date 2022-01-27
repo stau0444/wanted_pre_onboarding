@@ -36,7 +36,7 @@ const ModalBackground = styled("div")`
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+
 `
 const CustomModal = styled("div")`
     display: ${props => props.isOpen?"grid":"none"};
@@ -47,7 +47,7 @@ const CustomModal = styled("div")`
     border-radius: 40px;
     align-content: center;
     justify-content: center;
-    z-index: -1;
+    transition: all 0.4s linear; 
 `
 
 
