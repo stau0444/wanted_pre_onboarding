@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Toggle from './component/Toggle';
+import styled from 'styled-components';
+import Modal from './component/Modal';
+import Tab from './component/Tab';
+import Tag from './component/Tag';
+import AutoComplete from './component/AutoComplete';
+import ClickToEdit from './component/ClickToEdit';
 
+export const Section = styled("div")`
+    width: 400px;
+    border-radius: 40px;
+    border:1px solid black;
+    margin: 40px auto;
+`
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Toggle/>
+      <Modal/>
+      <Tab/>
+      <Tag/>
+      <AutoComplete/>
+      <ClickToEdit/>
     </div>
   );
 }
