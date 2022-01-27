@@ -1,6 +1,6 @@
 #
 ### Toggle
 #
+<img src="https://drive.google.com/file/d/1p9TSTlM3QFJ4F0Q76oOI-dG3bIdK1jDP/view?usp=sharing" width=400>
 
-![toggle](https://user-images.githubusercontent.com/51349774/151394427-53f5b584-4d19-493b-adb2-cd55596611d2.gif)
 
