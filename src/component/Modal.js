@@ -63,14 +63,14 @@ export default function Modal() {
     
     return(
         <Section className="modal-section">
+            <h2>Modal</h2>
+            <OpenBtn onClick={OpenModal}>모달 열기</OpenBtn>
             <ModalBackground onClick={CloseModal} isOpen={isOpen}>
                 <CustomModal isOpen={isOpen}>
-                    <CloseBtn onClick={CloseModal}>x</CloseBtn>
+                    <CloseBtn>x</CloseBtn>
                     <h2>모달 닫기</h2>
                 </CustomModal>
             </ModalBackground>
-            <h2>Modal</h2>
-            <OpenBtn onClick={OpenModal}>모달 열기</OpenBtn>
         </Section>
     );
 }

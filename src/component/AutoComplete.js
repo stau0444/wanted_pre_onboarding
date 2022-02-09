@@ -59,7 +59,7 @@ export default function AutoComplete() {
     const searchRef = useRef("");
     const [isEmpty , setIsEmpty] =useState(true);
     const [keyword,setKeyword] = useState("")
-    const [keywordList,setKeywordList]=useState(["java","javascript","react","redux","spring","springboot"]);
+    const keywordList = ["리액트","java","javascript","react","redux","spring","springboot"];
     const handleChange = (e) =>{
         if(e.target.value === ""){
             setIsEmpty(true)
@@ -96,14 +96,26 @@ export default function AutoComplete() {
                 </Wrap>
                 {
                     keywordList.filter((k)=>{
+                        return k.startsWith(keyword)
+                    }).length === 0 && keyword !== ""? 
+                    < WhiteList>
+                        <RecommendedWord>
+                         추천 검색어 없음
+                        </RecommendedWord>
+                    </WhiteList>
+                    :
+                    ""
+                }
+                {
+                    keywordList.filter((k)=>{
                         if(keyword === ""){
                             return ""
                         }else{
                             return k.startsWith(keyword)
                         }
                     }).map((k,i)=>{
-                        return <WhiteList onClick={()=>autoComplete(k)} key={i}>
-                                <RecommendedWord  onClick={(e)=>{e.preventDefault()}}>
+                        return < WhiteList onClick={()=>autoComplete(k)} key={i}>
+                                <RecommendedWord>
                                     {k}
                                 </RecommendedWord>
                                </WhiteList>

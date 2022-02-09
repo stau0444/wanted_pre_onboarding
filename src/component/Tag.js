@@ -56,7 +56,7 @@ const TagInput = styled("input")`
     outline: none;
 `
 export default function Tag() {
-    const [id , setId] = useState(0);
+    const [tagId , setTagId] = useState(0);
     const [tagList, setTagList ] = useState([]);
 
     const handleCancle = (id) => {
@@ -65,15 +65,13 @@ export default function Tag() {
         )
     }
     const addTag = (e) => {
-        
-            console.log(e.key)
         if(e.key === "Enter"){
             if(tagList.length>3){
                 alert("태그는 4개까지 선택할 수 있습니다.");
                 return;
             }
-            setId(id+1)
-            setTagList([...tagList , {id:id , name:e.target.value}])
+            setTagId(tagId+1)
+            setTagList([...tagList , {id:tagId , name:e.target.value}])
             e.target.value = ""
         }
     }
@@ -81,7 +79,7 @@ export default function Tag() {
     <Section className="tag-section">
         <h2>Tag</h2>
         <Wrap>
-            {tagList.map((t,i)=>{
+            {tagList.map((t)=>{
                 return<TagPiece
                         key={t.id}
                         >

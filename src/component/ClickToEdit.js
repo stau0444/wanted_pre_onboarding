@@ -29,11 +29,11 @@ export default function ClickToEdit() {
             <h2>ClickToEdit</h2>
             <Wrap>
                 <FormControl>
-                    <label for="name">이름</label>
+                    <label htmlFor="name">이름</label>
                     <CustomInput id="name" onBlur={(e)=>{setName(e.target.value)}}/>
                 </FormControl>
                 <FormControl>
-                    <label for="age">나이</label>
+                    <label htmlFor="age">나이</label>
                     <CustomInput id="age" onBlur={(e)=>{setAge(e.target.value)}}/>
                 </FormControl>
                 <Result>이름은 <strong>{name}</strong> 나이는 <strong>{age}</strong> 세</Result>

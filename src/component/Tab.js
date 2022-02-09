@@ -24,7 +24,7 @@ const CustomTab = styled("div")`
 
 export default function Tab() {
     const [checkedId, setCheckedId] = useState();
-    const [tabList,setTabList] =useState([
+    const [tabList,setTabList] = useState([
         {name:"tab1"},
         {name:"tab2"},
         {name:"tab3"}
