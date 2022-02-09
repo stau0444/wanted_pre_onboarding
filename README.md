@@ -29,13 +29,8 @@
 
 ## 1. Toggle
 
-#
-
-<br/>
 
 <img src="https://user-images.githubusercontent.com/51349774/151395336-a814d0a8-9c52-4cf9-9a43-f5ee24d2db0f.gif" width=300>
-<br/>
-<br/>
 
 #
 
@@ -55,16 +50,8 @@ toggle의 배경(Wrap 컴포넌트를)을 클릭합니다.
 
 ## 2. Tab
 
-#
-
-<br/>
-
 
 <img src=https://user-images.githubusercontent.com/51349774/151395928-78d94212-a24f-41fb-96f2-40e357cc94a2.gif width=300>
-
-<br/>
-<br/>
-
 
 #
 
@@ -85,13 +72,10 @@ toggle의 배경(Wrap 컴포넌트를)을 클릭합니다.
 
 #
 ## 3. Tag
-#
 
-<br/>
 
 <img src="https://user-images.githubusercontent.com/51349774/151396079-7c3aa66e-33d1-4c7c-b3f0-d36dedbdd111.gif" width=300>
-<br/>
-<br/>
+
 
 #
 
@@ -115,14 +99,10 @@ toggle의 배경(Wrap 컴포넌트를)을 클릭합니다.
 
 #
 ## 4. AutoComplete
-#
 
-<br/>
 
 <img src="https://user-images.githubusercontent.com/51349774/151396043-43d5cdd8-a9ac-43fb-8686-e09a57e252cf.gif" width=300>
 
-<br/>
-<br/>
 
 #
 
@@ -149,16 +129,12 @@ toggle의 배경(Wrap 컴포넌트를)을 클릭합니다.
 
 #
 ## 5. ClickToEdit
-#
 
-<br/>
 
 <img src="https://user-images.githubusercontent.com/51349774/151396098-ed9a3697-116f-4430-80ba-5293670fd7cc.gif#" width=300>
 
-<br/>
-<br/>
 
-
+#
 >구현 방식 
 
 - name ,age 두가지 상태값이 사용됩니다. onBlur 이벤트를 통해 인풋창에 입력한 후에 포커스가 아웃되면 입력값이 변경됩니다.
@@ -171,15 +147,10 @@ toggle의 배경(Wrap 컴포넌트를)을 클릭합니다.
 
 #
 ## 6. Modal
-#
 
-<br/>
 
 <img src="https://user-images.githubusercontent.com/51349774/151397029-ea7b5e54-2ee0-4c7d-a6cc-78525ea2a07a.gif" width=300>
 
-
-<br/>
-<br/>
 
 #
 
