@@ -16,7 +16,7 @@
  ```sh
  git clone https://github.com/stau0444/wanted_pre_onboarding.git
 
- cd wanted_pre_onboarding
+ cd custom-component
 
  npm install 
  
